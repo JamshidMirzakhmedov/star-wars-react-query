@@ -43,10 +43,9 @@ function Planets() {
         Next Page
       </button>
 
-      {data &&
-        data.results.map((planet) => (
-          <Planet key={planet.name} planet={planet} />
-        ))}
+      {data?.results?.map((planet) => (
+        <Planet key={planet.name} planet={planet} />
+      ))}
     </div>
   );
 }

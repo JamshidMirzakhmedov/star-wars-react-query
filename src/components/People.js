@@ -43,10 +43,9 @@ function People() {
         Next Page
       </button>
 
-      {data &&
-        data.results.map((person) => (
-          <Person key={person.name} person={person} />
-        ))}
+      {data?.results?.map((person) => (
+        <Person key={person.name} person={person} />
+      ))}
     </div>
   );
 }
